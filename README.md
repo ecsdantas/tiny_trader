@@ -10,23 +10,22 @@ Um bot de **auto-trade** para Binance, que compra e vende criptomoedas automatic
 ---
 
 ## 🛠️ **Instalação**    
-### 🔹 **Clonar o repositório e instalar pré-requisitos**    
+**Clonar o repositório e instalar pré-requisitos**    
 ```bash
-    git clone https://github.com/seu-usuario/autotrader-bot.git
-    cd autotrader-bot
-    pip install -r requirements.txt
+git clone https://github.com/ecsdantas/tiny_trader .
+pip install -r requirements.txt
 ```
 
-## Defina suas chaves     
-### Obter chaves da api em: https://testnet.binance.vision/     
+## 🔑 Defina suas chaves     
+Obter chaves da api em: https://testnet.binance.vision/     
 ```bash
-    export API_KEY="sua_api_key"
-    export API_SECRET="sua_api_secret"
+export API_KEY="sua_api_key"
+export API_SECRET="sua_api_secret"
 ```
 
 ## Rodar o script python   
 ```bash
-    python main.py
+python main.py
 ```
 
 ## ⚙️ Configuração de Estratégia    
@@ -34,19 +33,19 @@ Os parâmetros do bot podem ser ajustados no arquivo bot_data.json.Para modifica
 
 **Exemplo**: Alterar de Ethereum (ETH) para Bitcoin (BTC)    
 ```bash
-    {
-        "symbol": "BTCUSDT",
-        "capital": 1000,
-        "investment_amount": 30,
-        "tax_rate": 0.001,
-        "min_drop_to_buy": 0.15,
-        "profit_threshold": 0.05,
-        "max_consecutive_buys": 9,
-        "check_interval": 60
-    }
+{
+    "symbol": "BTCUSDT",
+    "capital": 1000,
+    "investment_amount": 30,
+    "tax_rate": 0.001,
+    "min_drop_to_buy": 0.15,
+    "profit_threshold": 0.05,
+    "max_consecutive_buys": 9,
+    "check_interval": 60
+}
 ```
 
-## ⚙️ Estrutura do projeto   
+## 📂 Estrutura do projeto   
 ```python
 📂 root
  ├── 📄 main.py                # Código principal do bot
@@ -57,7 +56,7 @@ Os parâmetros do bot podem ser ajustados no arquivo bot_data.json.Para modifica
 ```
 
 ## 📊 Parâmetros do Bot   
-### Os parâmetros podem ser ajustados para otimizar a estratégia de trading.    
+Os parâmetros podem ser ajustados para otimizar a estratégia de trading.    
 | Parâmetro	| Descrição	| Padrão |
 | --- | --- | --- |
 | symbol | Par de moedas negociado | "ETHUSDT" |
