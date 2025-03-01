@@ -23,9 +23,9 @@ class BinanceTradingBot:
         # Credenciais para Binance Testnet (obtenha as suas em: https://testnet.binance.vision/)
         self.client = Client(
             api_key=os.getenv("API_KEY"),
-            api_secret=os.getenv("API_SECRET"),
-            testnet=True
+            api_secret=os.getenv("API_SECRET")
         )
+        self.client.API_URL = 'https://testnet.binance.vision/api'
         # Arquivos para dados e log
         self.data_file = "bot_data.json"
         self.log_file = "bot_log.txt"

@@ -17,13 +17,19 @@ pip install -r requirements.txt
 ```
 
 ## 🔑 Defina suas chaves     
-Obter chaves da api em: https://testnet.binance.vision/     
+Obter chaves da api em: https://testnet.binance.vision/   
+Rodar no Linux
 ```bash
 export API_KEY="sua_api_key"
 export API_SECRET="sua_api_secret"
 ```
+ou no Windows
+```bash
+set API_KEY="sua_api_key"
+set API_SECRET="sua_api_secret"
+```
 
-## Rodar o script python   
+## ➡️ Rodar o script python   
 ```bash
 python main.py
 ```
